@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+	<listeners>
+		<listener  	class-name="com.stripe.api.commonUtiles.TestListeners"></listener>
+	 </listeners>
+	 
+	 
+  <test  name="Create Customer API Test">
+    <classes>
+      <class name="com.stripe.api.testcases.CretaeCustomerTest"/>
+     </classes>
+  </test> 
+  
+  <test  name="Delete Customer API Test">
+    <classes>
+      <class name="com.stripe.api.testcases.DeleteCustomerTest"/>
+     </classes>
+  </test> 
+  
+</suite> <!-- Suite -->
